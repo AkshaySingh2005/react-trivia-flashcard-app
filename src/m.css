@@ -1,0 +1,111 @@
+body {
+    background-color: #C8D0D2;
+    margin: 0;
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+  }
+  
+  .form-group.big {
+    flex: 1; /* Take up remaining space */
+  }
+  
+  .form-group > label {
+    color: #555;
+    font-size: .9rem;
+    margin-bottom: .25rem;
+  }
+  
+  .big {
+    font-size: 1.1rem;
+    padding: .75em 1.5em;
+    border-radius: .3em;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn.big {
+    background-color: hsl(200, 100%, 50%);
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn.big:hover {
+    background-color: hsl(200, 100%, 40%);
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Increased minimum card width */
+    gap: 1rem;
+  }
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: .25rem;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .3);
+    background-color: white;
+    transform-style: preserve-3d;
+    transition: 200ms ease;
+    cursor: pointer;
+    transform: perspective(1000px) rotateY(var(--rotate-y, 0)) translateY(var(--translate-y, 0));
+  }
+  
+  .card:hover {
+    --translate-y: -2px;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .5);
+  }
+  
+  .card.flip {
+    --rotate-y: 180deg;
+  }
+  
+  .card .front {
+    left: 0;
+  }
+  
+  .card .front,
+  .card .back {
+    position: absolute;
+    padding: 1rem;
+    backface-visibility: hidden;
+  }
+  
+  .card .back {
+    transform: rotateY(180deg);
+  }
+  
+  .flashcard-options {
+    margin-top: .5rem;
+  }
+  
+  .flashcard-option {
+    margin-top: .25rem;
+    color: #555;
+    font-size: .75rem;
+  }
+  
+  .flashcard-option:first-child {
+    margin-top: 0;
+  }
