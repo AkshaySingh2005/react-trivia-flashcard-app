@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-trivia-flashcard-app/static/css/main.a08e2482.css",
+    "main.js": "/react-trivia-flashcard-app/static/js/main.d4ec3507.js",
+    "index.html": "/react-trivia-flashcard-app/index.html",
+    "main.a08e2482.css.map": "/react-trivia-flashcard-app/static/css/main.a08e2482.css.map",
+    "main.d4ec3507.js.map": "/react-trivia-flashcard-app/static/js/main.d4ec3507.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a08e2482.css",
+    "static/js/main.d4ec3507.js"
+  ]
+}
