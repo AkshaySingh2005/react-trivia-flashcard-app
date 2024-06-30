@@ -94,7 +94,7 @@ function App() {
           </button>
         </div>
       </form>
-      <div className="container">
+      <div className="container ">
         <p className="instructions">Click on the card question to view the answer.</p>
         <FlashcardList flashcards={flashcards} resetFlipped={resetFlipped} />
       </div>

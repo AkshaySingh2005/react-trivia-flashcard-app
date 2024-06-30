@@ -27,7 +27,7 @@ export default function Flashcard({ flashcard, resetFlipped }) {
 
   return (
     <div
-      className={`card ${flip ? 'flip' : ''}`}
+      className={`card  ${flip ? 'flip' : ''}`}
       style={{ height: height }}
       onClick={() => setFlip(!flip)}
     >

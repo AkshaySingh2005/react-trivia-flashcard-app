@@ -3,6 +3,7 @@ body {
   background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);
   margin: 0;
   font-family: 'Arial', sans-serif;
+  animation: color-change-5x 10s linear infinite alternate both;
 }
 
 .container {
@@ -11,6 +12,9 @@ body {
   margin: 1rem auto;
   padding: 0 1rem;
 }
+
+
+
 
 .header {
   
